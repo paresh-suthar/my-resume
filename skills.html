@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills & Education - Paresh Suthar</title>
+  
+  <meta name="description" content="Technical Skills, Cloud Competencies, and Education of Paresh Suthar" />
+  <link rel="icon" type="image/svg+xml" href="assets/avatar-placeholder.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 antialiased min-h-screen selection:bg-indigo-500 selection:text-white transition-colors duration-200 flex flex-col justify-between">
+
+  <!-- NAVIGATION BAR -->
+  <nav class="sticky top-0 z-40 w-full nav-blur border-b border-slate-200/80 dark:border-slate-800/80 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo / Name -->
+        <a href="index.html" class="flex items-center gap-2.5 group">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
+            PS
+          </div>
+          <span class="font-bold text-slate-900 dark:text-white tracking-tight data-name">Paresh Suthar</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Overview</a>
+          <a href="experience.html" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Experience</a>
+          <a href="skills.html" class="px-3.5 py-2 rounded-xl text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 font-semibold transition-colors">Skills & Education</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Contact</a>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hidden md:flex items-center space-x-3">
+          <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          </button>
+
+          <button class="btn-download-resume inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm shadow-indigo-500/20 active:scale-95 transition-all">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Download CV</span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="flex items-center space-x-2 md:hidden">
+          <button id="theme-toggle-mobile" aria-label="Toggle Theme Mobile" class="p-2 rounded-lg text-slate-600 dark:text-slate-300">
+            <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+            <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+          </button>
+          <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-4 pt-2 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Overview</a>
+      <a href="experience.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
+      <a href="skills.html" class="block px-3 py-2 rounded-md text-base font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60">Skills & Education</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+      <button class="btn-download-resume w-full mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold bg-indigo-600 text-white">
+        <i data-lucide="download" class="w-4 h-4"></i>
+        <span>Download CV</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-16 flex-1 w-full">
+
+    <!-- Page Header -->
+    <div class="space-y-3">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800/50">
+        <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
+        <span>Tech Stack & Credentials</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+        Technical Skills & Education
+      </h1>
+      <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
+        Proficiencies in Linux systems, container technologies, CI/CD automation, cloud infrastructure, and academic achievements.
+      </p>
+    </div>
+
+    <!-- SKILLS MATRIX -->
+    <section class="space-y-6">
+      <div class="flex items-center gap-3">
+        <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+          <i data-lucide="terminal" class="w-6 h-6"></i>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Core Competencies</h2>
+      </div>
+
+      <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+      
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Education Background</h3>
+        </div>
+        <div id="education-list">
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+            <i data-lucide="award" class="w-5 h-5"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Certifications & Badges</h3>
+        </div>
+        <div id="certifications-list">
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200/80 dark:border-slate-800/80 py-10 bg-slate-100/60 dark:bg-slate-900/60 text-center text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+    <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span id="current-year">2026</span> <span class="data-name font-semibold text-slate-700 dark:text-slate-300">Paresh Suthar</span>. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Overview</a>
+        <span>•</span>
+        <a href="experience.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+        <span>•</span>
+        <a href="contact.html" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+        <span>•</span>
+        <button class="btn-download-resume text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">Print PDF Resume</button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/resume-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

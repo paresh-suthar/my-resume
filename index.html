@@ -5,21 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paresh Suthar - Aspiring DevOps Engineer | Resume & Portfolio</title>
   
-  <!-- Meta tags for SEO & Social Previews -->
   <meta name="description" content="Fresher DevOps Engineer & Cloud Resume / Portfolio" />
   <meta property="og:title" content="Paresh Suthar - DevOps Resume" />
   <meta property="og:description" content="View my career experience, skills, certifications, and download my ATS-friendly resume." />
-  <meta property="og:type" content="website" />
   
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/avatar-placeholder.svg" />
-
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS via CDN with customized config -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -39,56 +33,56 @@
       }
     }
   </script>
-
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <!-- Custom CSS (Glassmorphism, Theme Variables & Print Stylesheet) -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 antialiased min-h-screen selection:bg-indigo-500 selection:text-white transition-colors duration-200">
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 antialiased min-h-screen selection:bg-indigo-500 selection:text-white transition-colors duration-200 flex flex-col justify-between">
 
-  <!-- ========================================================================= -->
-  <!-- NAVIGATION BAR                                                            -->
-  <!-- ========================================================================= -->
+  <!-- NAVIGATION BAR -->
   <nav class="sticky top-0 z-40 w-full nav-blur border-b border-slate-200/80 dark:border-slate-800/80 transition-colors">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         
         <!-- Logo / Name -->
-        <a href="#" class="flex items-center gap-2.5 group">
+        <a href="index.html" class="flex items-center gap-2.5 group">
           <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center text-white font-bold text-sm shadow-sm group-hover:scale-105 transition-transform">
             PS
           </div>
           <span class="font-bold text-slate-900 dark:text-white tracking-tight data-name">Paresh Suthar</span>
         </a>
 
-        <!-- Desktop Navigation Links -->
+        <!-- Multi-page Navigation Links -->
         <div class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-600 dark:text-slate-300">
-          <a href="#about" class="px-3 py-2 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">About</a>
-          <a href="#experience" class="px-3 py-2 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Experience</a>
-          <a href="#skills" class="px-3 py-2 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Skills</a>
-          <a href="#education" class="px-3 py-2 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Education</a>
-          <a href="#contact" class="px-3 py-2 rounded-lg hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Contact</a>
+          <a href="index.html" class="px-3.5 py-2 rounded-xl text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60 font-semibold transition-colors">Overview</a>
+          <a href="experience.html" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors inline-flex items-center gap-1">
+            <span>Experience</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
+          </a>
+          <a href="skills.html" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors inline-flex items-center gap-1">
+            <span>Skills & Education</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
+          </a>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl hover:text-indigo-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors inline-flex items-center gap-1">
+            <span>Contact</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5 opacity-60"></i>
+          </a>
         </div>
 
         <!-- Action Buttons (Theme Toggle & Download CV) -->
         <div class="hidden md:flex items-center space-x-3">
-          <!-- Dark/Light Mode Toggle -->
           <button id="theme-toggle" aria-label="Toggle Theme" class="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
             <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
             <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
           </button>
 
-          <!-- Download Resume / PDF -->
-          <button class="btn-download-resume inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm shadow-indigo-500/20 hover:shadow-indigo-500/30 active:scale-95 transition-all">
+          <button class="btn-download-resume inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-sm shadow-indigo-500/20 active:scale-95 transition-all">
             <i data-lucide="download" class="w-4 h-4"></i>
             <span>Download CV</span>
           </button>
         </div>
 
-        <!-- Mobile Hamburger Button -->
+        <!-- Mobile Menu Button -->
         <div class="flex items-center space-x-2 md:hidden">
           <button id="theme-toggle-mobile" aria-label="Toggle Theme Mobile" class="p-2 rounded-lg text-slate-600 dark:text-slate-300">
             <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
@@ -104,11 +98,10 @@
 
     <!-- Mobile Drawer Menu -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur px-4 pt-2 pb-6 space-y-2">
-      <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">About</a>
-      <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience</a>
-      <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Skills</a>
-      <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Education</a>
-      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact</a>
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/60">Overview</a>
+      <a href="experience.html" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience ↗</a>
+      <a href="skills.html" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Skills & Education ↗</a>
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact ↗</a>
       <button class="btn-download-resume w-full mt-2 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-semibold bg-indigo-600 text-white">
         <i data-lucide="download" class="w-4 h-4"></i>
         <span>Download CV</span>
@@ -116,16 +109,13 @@
     </div>
   </nav>
 
-  <!-- ========================================================================= -->
-  <!-- MAIN CONTENT CONTAINER                                                    -->
-  <!-- ========================================================================= -->
-  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-16">
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 space-y-16 flex-1">
 
-    <!-- HERO / PROFILE HEADER -->
+    <!-- HERO SECTION -->
     <section id="hero" class="relative">
       <div class="glass-card rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 dark:border-slate-800/80 relative overflow-hidden">
         
-        <!-- Background Ambient Glow -->
         <div class="absolute -right-20 -top-20 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -left-20 -bottom-20 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -141,12 +131,9 @@
           <!-- Profile Details -->
           <div class="flex-1 text-center md:text-left space-y-4">
             
-            <!-- Availability Status Badge -->
             <div id="hero-status" class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800/50">
-              <!-- Rendered dynamically -->
             </div>
 
-            <!-- Name and Title -->
             <div>
               <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight data-name">
                 Paresh Suthar
@@ -156,12 +143,10 @@
               </p>
             </div>
 
-            <!-- Tagline / One-liner -->
             <p id="hero-tagline" class="text-slate-600 dark:text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
               Recent graduate passionate about Linux administration, Docker containerization, CI/CD pipeline automation, and Cloud Infrastructure (AWS / Vercel).
             </p>
 
-            <!-- Quick Meta Info (Location & Email) -->
             <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs sm:text-sm text-slate-500 dark:text-slate-400 pt-1">
               <span class="flex items-center gap-1.5">
                 <i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i>
@@ -169,26 +154,26 @@
               </span>
               <span class="flex items-center gap-1.5">
                 <i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i>
-                <a href="#" class="data-email-link hover:underline">paresh.devops@example.com</a>
+                <a href="mailto:paresh.devops@example.com" class="data-email-link hover:underline">paresh.devops@example.com</a>
               </span>
               <span class="flex items-center gap-1.5">
                 <i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i>
-                <a href="#" class="data-phone-link hover:underline">+91 98765 43210</a>
+                <a href="tel:+919876543210" class="data-phone-link hover:underline">+91 98765 43210</a>
               </span>
             </div>
 
-            <!-- Social Links & Hero Actions -->
+            <!-- Social Links & Page Actions -->
             <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-3 no-print">
-              <a id="social-github" href="#" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="GitHub Profile">
+              <a id="social-github" href="https://github.com/paresh-suthar" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="GitHub Profile">
                 <i data-lucide="github" class="w-5 h-5"></i>
               </a>
-              <a id="social-linkedin" href="#" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="LinkedIn Profile">
+              <a id="social-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="LinkedIn Profile">
                 <i data-lucide="linkedin" class="w-5 h-5"></i>
               </a>
-              <a id="social-twitter" href="#" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="Twitter / X Profile">
+              <a id="social-twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="Twitter / X Profile">
                 <i data-lucide="twitter" class="w-5 h-5"></i>
               </a>
-              <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 active:scale-95 transition-all ml-auto md:ml-2">
+              <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 active:scale-95 transition-all ml-auto md:ml-2">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 <span>Get In Touch</span>
               </a>
@@ -201,7 +186,6 @@
 
     <!-- QUICK STATS GRID -->
     <section id="stats-container" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <!-- Injected via JavaScript -->
     </section>
 
     <!-- ABOUT SECTION -->
@@ -217,167 +201,69 @@
         <p id="about-summary" class="text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed"></p>
         
         <div>
-          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">Key Highlights</h3>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-3">Key Competencies & Highlights</h3>
           <ul id="about-highlights" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-            <!-- Injected via JavaScript -->
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- WORK EXPERIENCE -->
-    <section id="experience" class="space-y-6">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="briefcase" class="w-6 h-6"></i>
-          </div>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Work Experience</h2>
+    <!-- QUICK NAVIGATION CARDS TO OTHER PAGES -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 no-print">
+      
+      <a href="experience.html" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-slate-200/80 dark:border-slate-800">
+        <div class="p-3 w-fit rounded-2xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 mb-4 group-hover:scale-110 transition-transform">
+          <i data-lucide="briefcase" class="w-6 h-6"></i>
         </div>
-      </div>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors flex items-center justify-between">
+          <span>Work Experience</span>
+          <i data-lucide="external-link" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+          View internships, capstone project leadership, and DevOps achievements in a new page.
+        </p>
+      </a>
 
-      <div id="experience-timeline" class="space-y-2 mt-4">
-        <!-- Injected via JavaScript -->
-      </div>
-    </section>
-
-    <!-- SKILLS MATRIX -->
-    <section id="skills" class="space-y-6">
-      <div class="flex items-center gap-3">
-        <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+      <a href="skills.html" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-slate-200/80 dark:border-slate-800">
+        <div class="p-3 w-fit rounded-2xl bg-cyan-50 dark:bg-cyan-950/60 text-cyan-600 dark:text-cyan-400 mb-4 group-hover:scale-110 transition-transform">
           <i data-lucide="cpu" class="w-6 h-6"></i>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Skills & Expertise</h2>
-      </div>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors flex items-center justify-between">
+          <span>Skills & Education</span>
+          <i data-lucide="external-link" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+          Explore technical proficiency in Linux, Docker, CI/CD, AWS, and certifications in a new page.
+        </p>
+      </a>
 
-      <div id="skills-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Injected via JavaScript -->
-      </div>
-    </section>
-
-    <!-- EDUCATION & CERTIFICATIONS -->
-    <section id="education" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      
-      <!-- Education Column -->
-      <div class="space-y-4">
-        <div class="flex items-center gap-3 mb-2">
-          <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Education</h3>
-        </div>
-        <div id="education-list">
-          <!-- Injected via JavaScript -->
-        </div>
-      </div>
-
-      <!-- Certifications Column -->
-      <div class="space-y-4">
-        <div class="flex items-center gap-3 mb-2">
-          <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
-            <i data-lucide="award" class="w-5 h-5"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 dark:text-white">Certifications</h3>
-        </div>
-        <div id="certifications-list">
-          <!-- Injected via JavaScript -->
-        </div>
-      </div>
-
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="no-print space-y-6">
-      <div class="flex items-center gap-3">
-        <div class="p-2.5 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400">
+      <a href="contact.html" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all group border border-slate-200/80 dark:border-slate-800">
+        <div class="p-3 w-fit rounded-2xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 mb-4 group-hover:scale-110 transition-transform">
           <i data-lucide="mail" class="w-6 h-6"></i>
         </div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">Let's Connect</h2>
-      </div>
+        <h3 class="text-lg font-bold text-slate-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors flex items-center justify-between">
+          <span>Contact & Connect</span>
+          <i data-lucide="external-link" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+          Send a direct message, copy email, or reach out for opportunities in a new page.
+        </p>
+      </a>
 
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
-        
-        <!-- Left info card -->
-        <div class="md:col-span-2 glass-card p-6 sm:p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Have a project or role in mind?</h3>
-            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
-              I'm always interested in hearing about new challenges, innovative web applications, and collaborative opportunities.
-            </p>
-
-            <div class="space-y-4 text-sm">
-              <div class="flex items-center gap-3">
-                <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400">
-                  <i data-lucide="mail" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Email Me</div>
-                  <a href="#" class="data-email-link font-medium text-slate-800 dark:text-slate-200 hover:underline">email@example.com</a>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <div class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-indigo-600 dark:text-indigo-400">
-                  <i data-lucide="map-pin" class="w-4 h-4"></i>
-                </div>
-                <div>
-                  <div class="text-xs text-slate-400">Location</div>
-                  <div class="font-medium text-slate-800 dark:text-slate-200">San Francisco, CA (Remote)</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button id="btn-copy-email" class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition-colors">
-            <i data-lucide="copy" class="w-4 h-4"></i>
-            <span>Copy Email Address</span>
-          </button>
-        </div>
-
-        <!-- Right interactive contact form -->
-        <div class="md:col-span-3 glass-card p-6 sm:p-8 rounded-3xl shadow-sm">
-          <form id="contact-form" class="space-y-4">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="form-name">Your Name</label>
-                <input required type="text" id="form-name" placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="form-email">Your Email</label>
-                <input required type="email" id="form-email" placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="form-subject">Subject</label>
-              <input required type="text" id="form-subject" placeholder="Opportunity / Project inquiry" class="w-full px-4 py-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="form-message">Message</label>
-              <textarea required id="form-message" rows="4" placeholder="Hello Paresh, I came across your resume and..." class="w-full px-4 py-2.5 rounded-xl bg-slate-100/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"></textarea>
-            </div>
-
-            <button type="submit" class="w-full py-3 px-6 rounded-xl font-semibold text-sm bg-indigo-600 hover:bg-indigo-700 text-white shadow-md shadow-indigo-500/20 active:scale-[0.99] transition-all flex items-center justify-center gap-2">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </div>
-
-      </div>
     </section>
 
   </main>
 
-  <!-- ========================================================================= -->
-  <!-- FOOTER                                                                    -->
-  <!-- ========================================================================= -->
+  <!-- FOOTER -->
   <footer class="border-t border-slate-200/80 dark:border-slate-800/80 py-10 bg-slate-100/60 dark:bg-slate-900/60 text-center text-xs sm:text-sm text-slate-500 dark:text-slate-400">
     <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>© <span id="current-year">2026</span> <span class="data-name font-semibold text-slate-700 dark:text-slate-300">Paresh Suthar</span>. All rights reserved.</p>
       <div class="flex items-center gap-4">
-        <a href="#" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Back to top ↑</a>
+        <a href="experience.html" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience ↗</a>
+        <span>•</span>
+        <a href="skills.html" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills ↗</a>
+        <span>•</span>
+        <a href="contact.html" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact ↗</a>
         <span>•</span>
         <button class="btn-download-resume text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">Print PDF Resume</button>
       </div>
@@ -387,8 +273,6 @@
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
-
-  <!-- Application Logic Scripts -->
   <script src="js/resume-data.js"></script>
   <script src="js/main.js"></script>
 </body>
